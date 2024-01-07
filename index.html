@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7719a7e26e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapp">
+        <div class="tasks__uncompleted">
+            <h3>Виконувані завдання</h3>
+            <ul class="task__list">
+                <li class="task__item task__item--undone">
+                    <div class="icon-holder icon-holder--undone">
+                    </div>
+                    <input type="text" class="task__input"></input>
+                    <div class="icon-holder icon-holder--add-btn">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tasks__completed">
+            <h3>Виконані завдання</h3>
+            <ul class="task__list">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        new ToDoList('.wrapp').init();
+    </script>
+</body>
+
+</html>
